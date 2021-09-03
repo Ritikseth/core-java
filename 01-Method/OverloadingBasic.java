@@ -7,7 +7,7 @@ class method_overloading{
     static int max(int a, int b, int c){
         return a>b&& a>c? a:(b>c?b:c);
     }
-    static float max(float a, float b){
+    static float max(float a, float b){    // float method can also be used for int variables,they both have int as literal
         return a > b?a:b;
     }
     static double max(double a, double b){
