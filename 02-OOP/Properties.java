@@ -1,7 +1,7 @@
 import java.lang.*;
 import java.util.*;
 
-class Rectangle {           // Read & Writable property
+class Rectangle { // Read & Writable property
     private double length;
 
     public double getLength() {
@@ -13,7 +13,7 @@ class Rectangle {           // Read & Writable property
     }
 }
 
-class Student {             // Read Only property
+class Student { // Read Only property
     private int roll;
 
     public int getRoll() {
@@ -21,7 +21,7 @@ class Student {             // Read Only property
     }
 }
 
-class Producer {            // Write Only property
+class Producer { // Write Only property
     private int sharedData;
 
     public void setSharedData(int d) {
@@ -31,6 +31,6 @@ class Producer {            // Write Only property
 
 class Properties {
     public static void main(String[] args) {
-        
+
     }
 }
