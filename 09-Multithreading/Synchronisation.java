@@ -6,6 +6,10 @@ class DisplayData {
 
         synchronized (this) {
             for (int i = 0; i < str.length(); i++) {
+                try {
+                    Thread.sleep(100);
+                } catch (Exception e) {
+                }
                 System.out.print(str.charAt(i));
             }
         }
