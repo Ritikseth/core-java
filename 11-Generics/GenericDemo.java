@@ -43,3 +43,25 @@ class GenericDemo{
         m.display();
     }
 }
+
+/* Note:-
+1. If we don't mention any type while creating a generic instance then it will be taken as an object by default
+2. Multiple parameters can be given, example-
+class MyArray<T,K>{}
+MyArray<String,Integer> m =new MyArray<>();
+3. Subtypes, If we extend a class MyArray2 from MyArray, then it will be taken as an object by default unless we specify.
+class MyArray<T>{}
+a. class MyArray2 extend MyArray // for object
+b. class MyArray2 extend MyArray<String> // for String
+c. class MyArray2<T> extends MyArray<T> // for generic, and we will have to mention the type while creating an instance
+4. Bounded Types
+class MyArray<T extends Number>{} // now only data types(only one) that are extended from Numbers can be passed , for example int, float,double,etc
+
+class A{}
+class B extends A{}
+class MyArray<T extends A>{}
+MyArray <A> m = new MyArray<>();
+MyArray <B> m2 = new MyArray<>();
+
+5. Even if we have interface class A{}, we will have to extend it and not implement it
+*/
